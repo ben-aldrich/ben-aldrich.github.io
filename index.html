@@ -12,273 +12,220 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #fafafa;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         /* Header */
         header {
-            background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 0;
+            padding: 2.5rem 0 2rem 0;
+            background: #fafafa;
         }
 
         .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #2c3e50;
-            text-decoration: none;
-            letter-spacing: -0.5px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            color: #666;
         }
 
-        nav ul {
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            margin-bottom: 1.5rem;
+            color: #000;
+        }
+
+        .intro {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+            max-width: 750px;
+            margin-bottom: 2rem;
+        }
+
+        /* Navigation */
+        nav {
             display: flex;
-            list-style: none;
             gap: 2rem;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 1rem;
         }
 
         nav a {
-            color: #555;
+            color: #666;
             text-decoration: none;
+            font-size: 0.95rem;
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: color 0.2s;
         }
 
         nav a:hover {
-            color: #3498db;
+            color: #000;
         }
 
-        /* Hero Section */
-        .hero {
-            padding: 6rem 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
-            letter-spacing: -1px;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto 2rem;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            padding: 0.75rem 2rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: #3498db;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: #3498db;
-            border-color: #3498db;
-        }
-
-        .btn-secondary:hover {
-            background: #3498db;
-            color: white;
-        }
-
-        /* Portfolio Section */
-        .portfolio {
-            padding: 4rem 0;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            color: #2c3e50;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
+        /* Sections */
+        section {
             margin-bottom: 4rem;
         }
 
-        .portfolio-card {
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            transition: all 0.3s ease;
+        h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 2rem;
+            color: #000;
         }
 
-        .portfolio-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            gap: 3rem;
         }
 
-        .portfolio-image {
+        .portfolio-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 3rem;
+        }
+
+        .portfolio-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .item-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            color: #000;
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: #999;
+            font-weight: 500;
+        }
+
+        .item-description {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.7;
+            margin: 1rem 0 1.5rem 0;
+        }
+
+        .item-image {
             width: 100%;
-            height: 250px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 350px;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+            border-radius: 3px;
+            margin-bottom: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #999;
             font-size: 3rem;
         }
 
-        .portfolio-content {
-            padding: 1.5rem;
-        }
-
-        .portfolio-content h3 {
-            margin-bottom: 0.5rem;
-            color: #2c3e50;
-        }
-
-        .portfolio-content p {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
-        }
-
-        .portfolio-tags {
+        .item-tags {
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
         }
 
         .tag {
-            background: #ecf0f1;
-            color: #555;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
-        }
-
-        /* About Section */
-        .about {
-            padding: 4rem 0;
+            font-size: 0.8rem;
+            color: #666;
             background: white;
-            border-radius: 8px;
-            margin: 2rem 0;
+            border: 1px solid #d0d0d0;
+            padding: 0.35rem 0.7rem;
+            border-radius: 2px;
         }
 
-        .about-content {
+        /* About section */
+        .about-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
-            align-items: center;
-        }
-
-        .about-text h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #2c3e50;
         }
 
         .about-text p {
             margin-bottom: 1rem;
-            color: #666;
+            color: #555;
+            font-size: 0.95rem;
         }
 
-        .skills {
+        .skills-list {
             display: flex;
-            gap: 1rem;
             flex-wrap: wrap;
-            margin-top: 1.5rem;
+            gap: 0.8rem;
         }
 
-        .skill-badge {
-            background: #3498db;
-            color: white;
+        .skill-item {
+            font-size: 0.9rem;
+            color: #666;
+            background: white;
+            border: 1px solid #d0d0d0;
             padding: 0.5rem 1rem;
-            border-radius: 6px;
-            font-weight: 500;
+            border-radius: 2px;
         }
 
         /* Footer */
         footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
             padding: 2rem 0;
-            margin-top: 4rem;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 0.9rem;
         }
 
-        .social-links {
+        .footer-links {
             display: flex;
-            justify-content: center;
             gap: 1.5rem;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
         }
 
-        .social-links a {
-            color: white;
+        .footer-links a {
+            color: #666;
             text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
         }
 
-        .social-links a:hover {
-            color: #3498db;
+        .footer-links a:hover {
+            color: #000;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
+            h1 {
+                font-size: 1.8rem;
             }
 
-            nav ul {
-                gap: 1rem;
-            }
-
-            .about-content {
+            .about-grid {
                 grid-template-columns: 1fr;
             }
 
-            .hero {
-                padding: 3rem 0;
+            nav {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .item-image {
+                height: 250px;
             }
         }
     </style>
@@ -286,143 +233,144 @@
 <body>
     <header>
         <div class="container">
+            <div class="logo">Cartography</div>
+            <h1>Portfolio</h1>
+            <p class="intro">I'm a cartographer focused on creating precise, beautiful maps that tell geographic stories. My work spans urban planning, environmental analysis, historical mapping, and data visualization for publications and organizations.</p>
             <nav>
-                <a href="#" class="logo">▬ Cartography</a>
-                <ul>
-                    <li><a href="#portfolio">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Mapping the World</h1>
-                <p>Beautiful, accurate, and thoughtfully designed cartography for projects that matter</p>
-                <div class="cta-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
+        <div class="container">
+            <section id="work">
+                <h2>National Geographic Maps</h2>
                 <div class="portfolio-grid">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">🗺️</div>
-                        <div class="portfolio-content">
-                            <h3>Urban Transit Network</h3>
-                            <p>Interactive map of metropolitan transit systems with real-time data integration.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">ArcGIS</span>
-                                <span class="tag">D3.js</span>
-                            </div>
+                    <div class="portfolio-item">
+                        <div class="item-header">
+                            <div class="item-title">Urban Transit Network</div>
+                            <div class="item-date">2024</div>
+                        </div>
+                        <p class="item-description">Interactive map visualization of metropolitan transit systems with real-time data integration and accessibility analysis for major urban centers.</p>
+                        <div class="item-image">🗺️</div>
+                        <div class="item-tags">
+                            <span class="tag">ArcGIS</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Data Visualization</span>
                         </div>
                     </div>
 
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">🌍</div>
-                        <div class="portfolio-content">
-                            <h3>Climate Data Visualization</h3>
-                            <p>Global temperature and precipitation patterns mapped with geospatial analysis.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">QGIS</span>
-                                <span class="tag">Python</span>
-                            </div>
+                    <div class="portfolio-item">
+                        <div class="item-header">
+                            <div class="item-title">Climate Change Patterns</div>
+                            <div class="item-date">2024</div>
+                        </div>
+                        <p class="item-description">Global temperature and precipitation patterns mapped through geospatial analysis. Shows projected climate scenarios across different geographic regions through 2100.</p>
+                        <div class="item-image">🌍</div>
+                        <div class="item-tags">
+                            <span class="tag">QGIS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">GIS Analysis</span>
                         </div>
                     </div>
 
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">📍</div>
-                        <div class="portfolio-content">
-                            <h3>Historical Boundary Study</h3>
-                            <p>Temporal mapping of shifting borders and administrative boundaries over centuries.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">GeoJSON</span>
-                                <span class="tag">Leaflet</span>
-                            </div>
+                    <div class="portfolio-item">
+                        <div class="item-header">
+                            <div class="item-title">Historical Boundaries</div>
+                            <div class="item-date">2023</div>
+                        </div>
+                        <p class="item-description">Temporal mapping of shifting borders and administrative boundaries across centuries. Interactive visualization showing geopolitical changes over time with historical context.</p>
+                        <div class="item-image">📍</div>
+                        <div class="item-tags">
+                            <span class="tag">GeoJSON</span>
+                            <span class="tag">Leaflet</span>
+                            <span class="tag">Web Mapping</span>
                         </div>
                     </div>
 
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">🏔️</div>
-                        <div class="portfolio-content">
-                            <h3>Topographic Survey</h3>
-                            <p>3D elevation maps and terrain analysis for land development planning.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">LiDAR</span>
-                                <span class="tag">DEM</span>
-                            </div>
+                    <div class="portfolio-item">
+                        <div class="item-header">
+                            <div class="item-title">Topographic Survey</div>
+                            <div class="item-date">2023</div>
+                        </div>
+                        <p class="item-description">3D elevation maps and terrain analysis for land development and environmental impact assessment. LiDAR-derived visualizations showing complex topography.</p>
+                        <div class="item-image">🏔️</div>
+                        <div class="item-tags">
+                            <span class="tag">LiDAR</span>
+                            <span class="tag">DEM</span>
+                            <span class="tag">3D Visualization</span>
                         </div>
                     </div>
 
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">🚗</div>
-                        <div class="portfolio-content">
-                            <h3>Infrastructure Planning</h3>
-                            <p>Network analysis for roads, utilities, and emergency response optimization.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">Network Analysis</span>
-                                <span class="tag">PostGIS</span>
-                            </div>
+                    <div class="portfolio-item">
+                        <div class="item-header">
+                            <div class="item-title">Infrastructure Planning</div>
+                            <div class="item-date">2023</div>
+                        </div>
+                        <p class="item-description">Network analysis for roads, utilities, and emergency response optimization in urban environments. Spatial analysis of critical infrastructure systems.</p>
+                        <div class="item-image">🚗</div>
+                        <div class="item-tags">
+                            <span class="tag">Network Analysis</span>
+                            <span class="tag">PostGIS</span>
+                            <span class="tag">Planning</span>
                         </div>
                     </div>
 
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">🌳</div>
-                        <div class="portfolio-content">
-                            <h3>Environmental Mapping</h3>
-                            <p>Land use classification and conservation area management visualization.</p>
-                            <div class="portfolio-tags">
-                                <span class="tag">Satellite Imagery</span>
-                                <span class="tag">ML</span>
-                            </div>
+                    <div class="portfolio-item">
+                        <div class="item-header">
+                            <div class="item-title">Environmental Conservation</div>
+                            <div class="item-date">2022</div>
+                        </div>
+                        <p class="item-description">Land use classification and conservation area management using satellite imagery and machine learning. Monitoring ecosystem change and protected areas globally.</p>
+                        <div class="item-image">🌳</div>
+                        <div class="item-tags">
+                            <span class="tag">Satellite Imagery</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Conservation</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="about" id="about">
-            <div class="container">
-                <div class="about-content">
-                    <div>
-                        <h2>About Me</h2>
-                        <p>I'm a cartographer with a passion for transforming geographic data into compelling visual stories. With expertise in both traditional and digital mapping techniques, I create maps that inform, inspire, and engage audiences.</p>
-                        <p>My work spans urban planning, environmental analysis, historical geography, and data visualization. I combine technical precision with thoughtful design to make complex spatial information accessible and beautiful.</p>
+            <section id="about">
+                <h2>About</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I combine technical expertise in GIS, cartographic design, and data visualization to create maps that inform and inspire. With experience in both print and interactive mapping, I've worked on projects ranging from National Geographic features to research publications and urban planning initiatives.</p>
+                        <p>My approach emphasizes clarity, accuracy, and visual storytelling. Whether mapping complex datasets or historical geographies, I strive to make spatial information accessible and engaging.</p>
                     </div>
                     <div>
-                        <h2>Skills & Tools</h2>
-                        <div class="skills">
-                            <span class="skill-badge">ArcGIS</span>
-                            <span class="skill-badge">QGIS</span>
-                            <span class="skill-badge">D3.js</span>
-                            <span class="skill-badge">Leaflet</span>
-                            <span class="skill-badge">PostGIS</span>
-                            <span class="skill-badge">Python</span>
-                            <span class="skill-badge">GeoJSON</span>
-                            <span class="skill-badge">Web Mapping</span>
+                        <h3 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.8px;">Skills & Tools</h3>
+                        <div class="skills-list">
+                            <span class="skill-item">ArcGIS</span>
+                            <span class="skill-item">QGIS</span>
+                            <span class="skill-item">D3.js</span>
+                            <span class="skill-item">Leaflet</span>
+                            <span class="skill-item">PostGIS</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">GeoJSON</span>
+                            <span class="skill-item">Web Mapping</span>
+                            <span class="skill-item">3D Visualization</span>
+                            <span class="skill-item">Data Analysis</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer id="contact">
-        <div class="container">
-            <div class="social-links">
+    <footer>
+        <div class="container" id="contact">
+            <p>Get in touch: <a href="mailto:hello@example.com">hello@example.com</a></p>
+            <div class="footer-links">
                 <a href="https://github.com" target="_blank">GitHub</a>
                 <a href="https://twitter.com" target="_blank">Twitter</a>
-                <a href="mailto:hello@cartography.com">Email</a>
                 <a href="https://linkedin.com" target="_blank">LinkedIn</a>
             </div>
-            <p>&copy; 2024 Cartography Portfolio. All rights reserved.</p>
+            <p style="margin-top: 1.5rem; color: #999;">© 2024 Cartography Portfolio</p>
         </div>
     </footer>
 </body>
