@@ -91,74 +91,6 @@
             color: #000;
         }
 
-        /* Portfolio Grid */
-        .portfolio-grid {
-            display: grid;
-            gap: 3rem;
-        }
-
-        .portfolio-item {
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 3rem;
-        }
-
-        .portfolio-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .item-header {
-            margin-bottom: 1.5rem;
-        }
-
-        .item-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-            color: #000;
-        }
-
-        .item-date {
-            font-size: 0.85rem;
-            color: #999;
-            font-weight: 500;
-        }
-
-        .item-description {
-            font-size: 0.95rem;
-            color: #555;
-            line-height: 1.7;
-            margin: 1rem 0 1.5rem 0;
-        }
-
-        .item-image {
-            width: 100%;
-            height: 350px;
-            background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
-            border-radius: 3px;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 3rem;
-        }
-
-        .item-tags {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            font-size: 0.8rem;
-            color: #666;
-            background: white;
-            border: 1px solid #d0d0d0;
-            padding: 0.35rem 0.7rem;
-            border-radius: 2px;
-        }
-
         /* About section */
         .about-grid {
             display: grid;
@@ -224,10 +156,6 @@
                 flex-wrap: wrap;
                 gap: 1rem;
             }
-
-            .item-image {
-                height: 250px;
-            }
         }
     </style>
 </head>
@@ -236,7 +164,7 @@
         <div class="container">
             <div class="logo">Ben Aldrich</div>
             <h1>Portfolio</h1>
-            <p class="intro">I'm a fourth-year undergrad at the University of Oregon, majoring in Environmental Geoscience and Spatial Data Science. Here's a collection of my work for research projects, courses, personal projects. Site under construction! 🔨👷‍♂️🏗️ Check back soon for updated body of work.</p>
+            <p class="intro">I'm an undergraduate student passionate about cartography and natural disaster monitoring. Through GIS analysis and geospatial visualization, I'm exploring how maps can help us understand environmental hazards and build more resilient communities. My work combines technical precision with thoughtful design to make complex geographic data accessible and actionable.</p>
             <nav>
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
@@ -248,99 +176,15 @@
     <main>
         <div class="container">
             <section id="work">
-                <h2>Research Work</h2>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="item-header">
-                            <div class="item-title">Urban Transit Network</div>
-                            <div class="item-date">2024</div>
-                        </div>
-                        <p class="item-description">Interactive map visualization of metropolitan transit systems with real-time data integration and accessibility analysis for major urban centers.</p>
-                        <div class="item-image">🗺️</div>
-                        <div class="item-tags">
-                            <span class="tag">ArcGIS</span>
-                            <span class="tag">D3.js</span>
-                            <span class="tag">Data Visualization</span>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="item-header">
-                            <div class="item-title">Climate Change Patterns</div>
-                            <div class="item-date">2024</div>
-                        </div>
-                        <p class="item-description">Global temperature and precipitation patterns mapped through geospatial analysis. Shows projected climate scenarios across different geographic regions through 2100.</p>
-                        <div class="item-image">🌍</div>
-                        <div class="item-tags">
-                            <span class="tag">QGIS</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">GIS Analysis</span>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="item-header">
-                            <div class="item-title">Historical Boundaries</div>
-                            <div class="item-date">2023</div>
-                        </div>
-                        <p class="item-description">Temporal mapping of shifting borders and administrative boundaries across centuries. Interactive visualization showing geopolitical changes over time with historical context.</p>
-                        <div class="item-image">📍</div>
-                        <div class="item-tags">
-                            <span class="tag">GeoJSON</span>
-                            <span class="tag">Leaflet</span>
-                            <span class="tag">Web Mapping</span>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="item-header">
-                            <div class="item-title">Topographic Survey</div>
-                            <div class="item-date">2023</div>
-                        </div>
-                        <p class="item-description">3D elevation maps and terrain analysis for land development and environmental impact assessment. LiDAR-derived visualizations showing complex topography.</p>
-                        <div class="item-image">🏔️</div>
-                        <div class="item-tags">
-                            <span class="tag">LiDAR</span>
-                            <span class="tag">DEM</span>
-                            <span class="tag">3D Visualization</span>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="item-header">
-                            <div class="item-title">Infrastructure Planning</div>
-                            <div class="item-date">2023</div>
-                        </div>
-                        <p class="item-description">Network analysis for roads, utilities, and emergency response optimization in urban environments. Spatial analysis of critical infrastructure systems.</p>
-                        <div class="item-image">🚗</div>
-                        <div class="item-tags">
-                            <span class="tag">Network Analysis</span>
-                            <span class="tag">PostGIS</span>
-                            <span class="tag">Planning</span>
-                        </div>
-                    </div>
-
-                    <div class="portfolio-item">
-                        <div class="item-header">
-                            <div class="item-title">Environmental Conservation</div>
-                            <div class="item-date">2022</div>
-                        </div>
-                        <p class="item-description">Land use classification and conservation area management using satellite imagery and machine learning. Monitoring ecosystem change and protected areas globally.</p>
-                        <div class="item-image">🌳</div>
-                        <div class="item-tags">
-                            <span class="tag">Satellite Imagery</span>
-                            <span class="tag">Machine Learning</span>
-                            <span class="tag">Conservation</span>
-                        </div>
-                    </div>
-                </div>
+                <h2<Work</h2>
+                <p style="color: #999; font-size: 0.95rem;">🔨 Under construction...</p>
             </section>
 
             <section id="about">
-                <h2>About Me!</h2>
+                <h2>About Me</h2>
                 <div class="about-grid">
                     <div class="about-text">
-                        <p>I combine technical experience in GIS, cartography, and data analysis to create graphics that convey information with a human touch. Yet to join the general workforce, I am chomping at the bit to get more experience under my belt and involvement in the field!</p>
+                        <p>I combine technical experience in GIS, cartography, and data analysis to create graphics that convey information with a human touch. Currently a fourth-year undergrad at the University of Oregon majoring in Environmental Geoscience and Spatial Data Science, I'm eager to apply my skills to real-world problems in disaster monitoring and environmental mapping.</p>
                     </div>
                     <div>
                         <h3 style="font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.8px;">Skills & Tools</h3>
@@ -352,23 +196,40 @@
                             <span class="skill-item">Data Analysis</span>
                             <span class="skill-item">Google Earth Engine</span>
                             <span class="skill-item">GDAL</span>
-
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
-    </main>
 
     <footer>
         <div class="container" id="contact">
             <p>Get in touch: <a href="mailto:benaldr@icloud.com">benaldr@icloud.com</a></p>
             <div class="footer-links">
-                <a href="https://github.com/ben-aldrich" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/ben-aldrich/" target="_blank">LinkedIn</a>
+                <a href="your-resume.pdf" target="_blank">Resume</a>
+                <a href="https://github.com/ben-aldrich" target="_blank">GitHub</a>
             </div>
             <p style="margin-top: 1.5rem; color: #999;">© 2026 Ben Aldrich</p>
         </div>
     </footer>
+
+    <script>
+        const navButtons = document.querySelectorAll('.nav-btn');
+        const sections = document.querySelectorAll('section');
+
+        navButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetSection = button.getAttribute('data-section');
+
+                // Remove active class from all buttons and sections
+                navButtons.forEach(btn => btn.classList.remove('active'));
+                sections.forEach(sec => sec.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding section
+                button.classList.add('active');
+                document.getElementById(targetSection).classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
